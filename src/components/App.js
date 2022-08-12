@@ -18,7 +18,6 @@ function App() {
           email: user.email,
         });
         setIsLoggedIn(true);
-        console.log(userObj);
       } else {
         setIsLoggedIn(false);
       }
