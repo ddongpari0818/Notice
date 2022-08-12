@@ -1,0 +1,188 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+  font-family: "Noto Sans KR", sans-serif;
+}
+table {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  margin: 20px 10px;
+  width: 80%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+table th {
+  width: 150px;
+  padding: 10px;
+  vertical-align: top;
+  background-color: #ebebeb;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+table td {
+  width: 350px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+
+h1 {
+  position: relative;
+  width: 138px;
+  left: 10%;
+}
+
+.create {
+  float: right;
+  position: relative;
+  right: 10%;
+  top: 20px;
+}
+
+.value {
+  position: relative;
+  left: 10%;
+  top: 50px;
+  width: 80%;
+}
+
+.value h2 {
+  font-size: 32px;
+}
+
+.comment-input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  height: 30px;
+}
+
+.notice-con {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+}
+
+.comment-con {
+  position: relative;
+  top: 50px;
+}
+
+.comment-button {
+  float: right;
+  position: relative;
+  top: -40px;
+  background-color: white;
+  border: none;
+}
+
+.notice-title {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  height: 30px;
+}
+
+.notice-des {
+  position: relative;
+  top: 50px;
+  height: 200px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.upload-button {
+  position: relative;
+  top: 70px;
+  border: none;
+  background-color: rgb(46, 170, 220);
+  color: white;
+  border-radius: 3px;
+  height: 30px;
+  width: 45px;
+}
+
+#root {
+  margin-bottom: 70px;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+  display: block;
+  fill: rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+  backface-visibility: hidden;
+}
+
+.value span {
+  font-size: 16px;
+  width: 100px;
+}
+
+.owner {
+  background-color: white;
+  border: none;
+  position: relative;
+  float: right;
+  top: 10px;
+}
+
+.menu {
+  position: relative;
+  width: 20px;
+  fill: rgba(0, 0, 0, 100);
+}
+
+.commentPhoto {
+  width: 100%;
+}
+
+.commentDiv {
+  height: 70px;
+}
+
+.commentCon {
+  display: inline-block;
+}
+
+.photoDiv {
+  position: relative;
+  top: 50px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.commentText {
+  position: relative;
+  left: 50px;
+  top: -20px;
+  font-weight: 500;
+}
+
+.commentAuthor {
+  color: rgb(73, 73, 73);
+  position: relative;
+  left: 50px;
+  font-size: 13px;
+  top: -7px;
+}
