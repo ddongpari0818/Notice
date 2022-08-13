@@ -59,15 +59,13 @@ function Comment({ id, userObj }) {
         </form>
         {comments.map((comment) => (
           <div className="commentDiv">
-            <div className="commentCon">
-              <div className="photoDiv">
-                <img className="commentPhoto" src={comment.photoUrl}></img>
-              </div>
-              <p className="commentAuthor">{comment.author}</p>
-              <p className="commentText" key={comment.id}>
-                {comment.cm}
-              </p>
+            <div className="photoDiv">
+              <img className="commentPhoto" src={comment.photoUrl}></img>
             </div>
+            <p className="commentAuthor">{comment.author}</p>
+            <p className="commentText" key={comment.id}>
+              {comment.cm}
+            </p>
           </div>
         ))}
       </div>

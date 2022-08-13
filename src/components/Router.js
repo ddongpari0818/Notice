@@ -4,6 +4,14 @@ import Print from "../routes/Print";
 import Notices from "../routes/Notice";
 import Auth from "../routes/Auth";
 import PrintValue from "../routes/PrintValue";
+import { auth } from "../firebase";
+
+const logOut = () => {
+  const select = window.confirm("로그아웃 하시겠습니까?");
+  if (select) {
+    auth.signOut();
+  }
+};
 
 const AppRouter = ({ notices, isLoggedIn, userObj }) => {
   return (
@@ -17,6 +25,7 @@ const AppRouter = ({ notices, isLoggedIn, userObj }) => {
                   게시판 📃
                 </Link>
               </h1>
+
               <table border="1">
                 <thead>
                   <tr>
@@ -39,12 +48,25 @@ const AppRouter = ({ notices, isLoggedIn, userObj }) => {
                     ))}
                 </tbody>
               </table>
+
               <Link
                 to="/create"
                 style={{ textDecoration: "none" }}
                 className="create"
               >
                 글 쓰기 🖊️
+              </Link>
+              <Link
+                onClick={logOut}
+                className="create"
+                style={{
+                  textDecoration: "none",
+                  marginLeft: "20px",
+                  marginRight: "20px",
+                }}
+                to="/"
+              >
+                로그아웃
               </Link>
             </>
           ) : (

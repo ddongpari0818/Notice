@@ -3,6 +3,11 @@
 html {
   font-family: "Noto Sans KR", sans-serif;
 }
+
+body {
+  margin-bottom: 200px;
+}
+
 table {
   border-collapse: collapse;
   text-align: left;
@@ -155,34 +160,30 @@ svg {
   width: 100%;
 }
 
-.commentDiv {
-  height: 70px;
-}
-
-.commentCon {
-  display: inline-block;
-}
-
 .photoDiv {
   position: relative;
-  top: 50px;
   width: 40px;
   height: 40px;
   overflow: hidden;
   border-radius: 100%;
+  top: 35px;
 }
 
 .commentText {
   position: relative;
-  left: 50px;
-  top: -20px;
   font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  bottom: 4px;
+  left: 50px;
 }
 
 .commentAuthor {
   color: rgb(73, 73, 73);
   position: relative;
-  left: 50px;
   font-size: 13px;
-  top: -7px;
+  left: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  bottom: 8px;
 }
